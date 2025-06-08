@@ -1,0 +1,14 @@
+<mat-grid-list [cols]="breakpoint" rowHeight="33.3%" (window:resize)="onResize($event)">
+  <mat-grid-tile>
+    <img src="logo.png"/>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <img src="bikeride.jpg" width="299px;" height="241px;"/>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <p>Latitude: {{ latitude }}</p>
+    <p>Longitude: {{ longitude }}</p>
+    <p>{{ errorMessage }}</p>
+  </mat-grid-tile>
+</mat-grid-list>
+
