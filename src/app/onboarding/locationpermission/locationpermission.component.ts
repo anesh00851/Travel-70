@@ -26,7 +26,7 @@ breakpoint: number=0;
   }
 
   getLocation() {
-    if ('geolocation' in navigator) {
+    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           this.latitude = position.coords.latitude;
